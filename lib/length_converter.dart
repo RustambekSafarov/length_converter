@@ -22,6 +22,21 @@ class Length {
       if (unit == 'm') {
         return this.x / 100;
       }
+      if (unit == 'cm') {
+        return this.x;
+      }
+    }
+
+    if (this.unit == 'km') {
+      if (unit == 'km') {
+        return this.x;
+      }
+      if (unit == 'm') {
+        return this.x * 100;
+      }
+      if (unit == 'cm') {
+        return this.x * 100000;
+      }
     }
 
     return 0;
